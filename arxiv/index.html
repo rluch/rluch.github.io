@@ -83,7 +83,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/network.png" alt="">
+                    <!--img class="img-responsive" src="img/network.png" alt="" -->
+                    <img class="img-responsive" src="img/community_logo.png" />
                     <div class="intro-text">
                         <span class="name">ArXASE</span>
                         <hr class="star-light">
@@ -104,17 +105,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-5 col-lg-offset-2">
                     <p>
-                        ArXiV Abstract Similarity Engine is a project created by three
+                        ArXiv Abstract Similarity Engine is a final project created by three
                         master students fall semester 2016 in the course 02805
                         Social graphs and interactions, run by
                         <a href="https://sunelehmann.com" target="_blank">Sune Lehmann</a> at the
                         <a href="https://dtu.dk" target="_blank">Technical University of Denmark</a>.
+                        The two main topics of the course (besides python programming) is <i>Natural Language Programming</i> and <i>Network Science</i>. The project has hence been thought out to leverage the techniques we've learned in those topics.
                     </p>
                 </div>
-                <div class="col-sm-4">
-                    <img src="img/dtu_compute.png" class="img-responsive" alt="">
+                <div class="col-sm-4 align-middle">
+                    <img src="img/dtu_compute.png" class="img-responsive" alt="" class="align-middle" />
                 </div>
             </div>
         </div>
@@ -130,8 +132,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p style="text-align: center; font-family: freight-sans-pro; font-size: 30px; font-weight: 500; font-style: italic;">
+                        “I would found an institution where any person can find instruction in any study.”<br />EZRA CORNELL, 1868
+                    </p>
+                    <img src="img/cornell.png" class="img-responsive" alt="" style="margin-left: 45px; margin-top: 50px;"/>
+                </div>
+                <div class="col-lg-4">
+                <p>
+                        The arXiv (pronounced archive, X being the greek letter &chi;/chi) is a repository of electronic preprints, known as e-prints, of scientific papers. The repository holds, as of December 2016, <span style="font-style: italic; text-decoration: underline; font-weight: bold;">1,211,916</span> e-prints in the fields of: mathematics, physics, astronomy, computer science, quantitative biology, statistics, and quantitative finance. The repository is created and managed by the Cornell University Library and is, unlike other scientific repositories, available online to every person without restrictions.
+                </p>
                 </div>
             </div>
         </div>
@@ -147,7 +157,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                    <p>
+                        NLP is a field in Computer Science dealing with Computational Linguistics.<br /><br />
+                        The field is gaining wide popularity the recent years as the amount of human produced text and data is rapididly increasing and the use of artificial intelligence is being used in many contexts.
+                    </p>
+                    <p>
+                        In this study, we are focusing on the text abstracts of the scientific papers released to ArXiv.org. Each paper abstract will be processed with the the following steps in order to computationally decide which words are most important for the given paper.
+                    </p>
+                    <ol class="nlp-steplist">
+                        <li>Tokenization</li>
+                        <p>The process of splitting a text up in units, each unit being a word. In the process special characters such as punctuation- and exclamation-marks and even numbers, are removed, leaving just the actual words.</p>
 
+                        <li>Remove Stop Words</li>
+                        <p>Stop words are words that are often very common, short and do not have significant meaning to the meaning text of the text they appear in. Some of the most common Stop Word are: <span style="font-weight: bold;">the, to, at, is, which, and</span>.</p>
+
+                        <li>Lemmatization</li>
+                        <p>Is the process of returning a word to it's root (much like stemming, but more sophisticated) treating the words "messages", "message", and "messaging" as the same word.</p>
+
+                        <li>Term Frequency–Inverse Document Frequency</li>
+                        <p>
+                            Last step in our NLP process is the use of the numerical method TF-IDF to decide which words/topics are most important to the abstract.
+                            Instead of using the raw frequencies of occurrence of a word in a given abstract, it is scaled down so the impact of words that occur very frequently in a given corpus (all collected papers) is hence empirically less informative than words that occur in a small fraction of the corpus.
+                        </p>
                 </div>
             </div>
         </div>
@@ -157,7 +188,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>The Network</h2>
+                    <h2>Network Science</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -203,7 +234,7 @@
 
 
     <!-- About Section -->
-    <section class="about" id="about" style="background: #999">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -225,7 +256,7 @@
                     <a href="#" class="btn btn-sm btn-outline">
                         <i class="fa fa-github"></i>
                     </a>
-                    <a href="#" class="btnbtn-sm btn-outline">
+                    <a href="#" class="btn btn-sm btn-outline">
                         <i class="fa fa-linkedin-square"></i>
                     </a>
                     <a href="#" class="btn btn-sm btn-outline">
@@ -291,6 +322,8 @@
                     <div class="footer-col col-md-4">
                         <!--h3>About Freelancer</h3>
                         <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p-->
+                        <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Bootstrap template: <a href="https://github.com/BlackrockDigital/startbootstrap-freelancer">Freelancer</a>.
                     </div>
                 </div>
             </div>
@@ -300,7 +333,6 @@
                 <div class="row">
                     <div class="col-lg-12">
                         Copyright &copy; ArXiv Abstract Similarity Engine 2016<br />
-                        <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                     </div>
                 </div>
             </div>

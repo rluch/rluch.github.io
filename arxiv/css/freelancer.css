@@ -3,6 +3,19 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.nlp-steplist {
+  /*border-radius: 15px;
+  padding-bottom: 10px;*/
+}
+.nlp-steplist li {
+  font-size: 25px;
+  border-bottom: 2px SOLID #648CB5;
+}
+.nlp-steplist li p {
+  background-color: white;
+  margin-left: -40px;
+  padding-left: 40px;
+}
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
@@ -60,11 +73,11 @@ hr.star-light:after {
   color: white;
 }
 hr.star-dark {
-  border-color: #999;
+  border-color: #F4F7F7;
 }
 hr.star-dark:after {
-  background-color: #EEEEEE;
-  color: #999;
+  background-color: #F4BE29;
+  color: #F4F7F7;
 }
 hr.star-primary {
   border-color: #2C3E50;
@@ -92,7 +105,7 @@ header img {
 header .intro-text .name {
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   font-size: 2em;
 }
@@ -115,7 +128,6 @@ header .intro-text .skills {
 .navbar-custom {
   background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   border: none;
 }
@@ -135,6 +147,7 @@ header .intro-text .skills {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
+  text-transform: uppercase;
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
@@ -199,7 +212,7 @@ section.success {
   color: white;
 }
 section.about {
-  background: #EEEEEE;
+  background: #F4BE29;
   color: white;
 }
 @media (max-width: 767px) {

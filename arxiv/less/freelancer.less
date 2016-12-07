@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "arxiv.less";
 
 body {
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -62,12 +63,12 @@ hr.star-light:after {
 }
 
 hr.star-dark {
-    border-color: #999;
+    border-color: #F4F7F7;
 }
 
 hr.star-dark:after {
     background-color: @theme-about;
-    color: #999;
+    color: #F4F7F7;
 }
 
 hr.star-primary {
@@ -99,7 +100,7 @@ header {
 		.name {
 			display: block;
 			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/
 			font-weight: 700;
 			font-size: 2em;
 		}
@@ -130,7 +131,6 @@ header {
 .navbar-custom {
 	background: @theme-primary;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
 	a:focus {
@@ -149,6 +149,7 @@ header {
 		letter-spacing: 1px;
 		li {
 			a {
+				text-transform: uppercase;
 				color: white;
 				&:hover {
 					color: @theme-success;
